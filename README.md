@@ -97,7 +97,7 @@ print(f"Optimized for 1B model: {len(filtered_dataset)}")
 
 To ensure SOTA quality, we employed a strict curation pipeline:
 
-1.  **Ingestion:** Sampled \~30k candidates from `nvidia/OpenMathInstruct-2`.
+1.  **Ingestion:** Sampled \~10k candidates from `nvidia/OpenMathInstruct-2`.
 2.  **LLM-as-a-Judge:** Used `gpt-oss-120b` to evaluate the complexity and subject matter of each problem.
 3.  **Sanitization:** Removed duplicates, verified LaTeX integrity, and standardized the `\boxed{}` answer format.
 4.  **Preservation:** Retained all levels (1-5) in this release to maximize utility for the open-source community, while flagging hard problems via metadata.
